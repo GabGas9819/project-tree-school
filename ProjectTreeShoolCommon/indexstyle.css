@@ -12,6 +12,11 @@ html{
     background-color: #0b1622;
 }
 
+h1,h2,h3{
+    text-transform: uppercase;
+    color: forestgreen;
+}
+
 p{
     padding: 2% 0;
 }
@@ -90,6 +95,8 @@ header{
     padding: 0;
 }
 
+/* main start */
+
 main{
     position: relative;
     top: 10vmin;
@@ -97,11 +104,22 @@ main{
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
+    width: 100%;
 }
 
-section{
+/* main section start */
+
+.mainsection{
     width: 60%;
-    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+}
+
+/* sections start */
+
+section{
+    width: 400px;
 }
 
 section h2{

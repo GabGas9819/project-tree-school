@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- links -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementi-e-tag-in-html</title>
+</head>
+<body>
+<!-- nav section start -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="/Homepage.html"><img src="/logoimg/logo.webp" alt="logoimg"></a>
+        </div>
+        <div class="links-container">
+            <a href="/index.html">Html</a>
+            <a href="">css</a>
+            <a href="">javascript</a>
+            <a href="">esercizi</a>
+        </div>
+    </div>
+</nav>
+<!-- nav section end -->
+
+<header class="header">
+    <div class="headercontainer">
+        <h1>
+            Gli attributi
+        </h1>
+        <p>            
+            Assegnare attributi agli elementi per migliorarne la descrizione o specificare alcune funzioni dell'interfaccia utente. Vediamo gli attributi più comuni.
+        </p>
+    </div>
+</header>
+<main>
+    <!-- main section start -->
+    <section class="mainsection">
+        <!-- sections start -->
+        <section>
+            <p>I tag HTML sono elementi utilizzati per strutturare e definire il contenuto di una pagina web.
+                Gli attributi sono utilizzati per specificare la funzione o la tipologia dell'elemento e per arricchire di significato il contenuto.
+                Gli attributi possono essere uno o più e sono aggiunti ai tag HTML per fornire informazioni aggiuntive.
+            </p>
+            <p>
+                Un tag con attributi si scrive in questo modo:
+            </p>
+            <div class="codecontainer">
+                <code>
+                    < tag attributo1="valore1" attributo2="valore2" >< /tag >
+                </code>
+            </div>
+            <p>                
+                Ecco un esempio pratico:
+            </p>
+            <div class="codecontainer">
+                <code>
+                    < input type="email" name="email" placeholder="Scrivi il tuo indirizzo email..." >
+                </code>
+            </div>
+            <p>
+                Il tag input indica genericamente un elemento che consente agli utenti di inserire delle informazioni. Grazie agli attributi però, possiamo specificare che vogliamo un indirizzo email (attributo type) e possiamo comunicarlo all'utente con un messaggio (attributo placeholder).
+            </p>
+            <p>
+                In sostanza gli attributi:
+            </p>
+            <ul>
+                <li>
+                    Le coppie chiave-valore sono un modo di rappresentare dati in cui ogni valore è associato a una chiave.
+                    Queste coppie sono separate dal carattere = (uguale).
+                    I valori solitamente sono racchiusi tra virgolette "" ma possono essere anche racchiusi tra apici.
+                </li>
+                <li>
+                    I valori sono tipicamente racchiusi tra virgolette "" o apici ''
+                    Questo è comune nell'uso di attributi in HTML
+                    Le virgolette alte possono essere utilizzate per segnalare un uso particolare di una parola, mentre gli apici sottolineano una singola espressione
+                </li>
+                <li>
+                    si scrivono lasciando almeno uno spazio dopo il nome dell'elemento nel tag di apertura (o nell'unico tag nel caso di elementi non contenitori).
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Gli attributi comuni, global attributes
+            </h2>
+            <p>
+                Gli attributi comuni sono gli attributi che possono essere applicati a tutti i tag in HTML.
+                Questi attributi sono definiti come attributi globali.
+                Gli attributi globali possono essere utilizzati su tutti gli elementi HTML, anche se potrebbero non avere effetto su alcuni elementi.                
+            </p>
+            <ul>
+                <li>attributi di base (core);</li>
+                <li>attributi per la gestione eventi.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Attributi Core
+            </h2>
+            <p>
+                Gli attributi core sono componenti fondamentali di un sistema o di un linguaggio che forniscono funzionalità di base o caratteristiche essenziali.
+                Gli attributi core possono essere presenti in diversi contesti, come database, linguaggi di programmazione o linguaggi di markup, e svolgono un ruolo importante nella definizione e nel funzionamento di tali sistemi.
+                Gli attributi core possono influenzare l'aspetto, il comportamento o le funzionalità di un sistema o di un elemento all'interno di esso.
+            </p>
+            <!-- table start  -->
+            <table>
+                <thead>
+                    <tr><td>Attributo</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>title</td>
+                        <td>
+                        <ul>
+                            <li>                                
+                                L'informazione che aiuta a descrivere il contenuto di un elemento.
+                            </li>
+                            <li>
+                                Il testo viene spesso rappresentato in un tooltip che appare quando si passa il mouse sopra.
+                            </li>
+                            <li>
+                                Il tooltip fornisce una breve descrizione o informazioni aggiuntive sull'elemento.
+                            </li>
+                        </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>lang</td>
+                        <td>
+                            Indica la lingua del contenuto. Es. < p lang="it">ciao< /p >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Serve ad associare un identificatore univoco ad un elemento
+                                </li>
+                                <li>
+                                    Una volta assegnato un identificatore, non si dovrà assegnarlo a nessun altro elemento della pagina
+                                </li>                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>class</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Le classi servono a stabilire che un elemento appartiene a una serie di "classi" con proprietà simili.
+                                </li>
+                                <li>
+                                    È possibile assegnare più classi a un elemento, separate da uno spazio.
+                                </li>                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    La stilizzazione "inline" è un metodo per assegnare stili CSS direttamente all'elemento HTML.
+                                </li>
+                                <li>
+                                    Questo metodo permette di definire le proprietà grafiche dell'elemento in modo specifico e immediato.
+                                </li>
+                                <li>
+                                    La stilizzazione "inline" viene spesso utilizzata per apportare modifiche rapide e personalizzate agli stili di un singolo elemento.
+                                </li>                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>draggable</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    L'attributo può assumere i valori true o false.
+                                </li>
+                                <li>
+                                    Serve a stabilire se un elemento è trascinabile per una operazione di drag-n-drop.
+                                </li>
+                                <li>
+                                    Viene utilizzato per controllare la possibilità di trascinare un elemento.
+                                </li>                                
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table end  -->
+            <p>
+                Attributi come <em>id, class e style</em> sono tra i più utilizzati
+            </p>
+        </section>
+        <section>
+            <h2>
+                Attributi per la gestione degli eventi
+            </h2>
+            <p>
+                Gli attributi per la gestione degli eventi sono utilizzati per definire il comportamento di un elemento quando si verifica un evento.
+                Questi attributi possono essere associati a elementi grafici o azioni specifiche degli utenti.
+                La gestione degli eventi consente di creare codice che viene eseguito quando si verifica un evento, consentendo alle pagine web di rispondere adeguatamente ai cambiamenti.
+            </p>
+            <div class="codecontainer">
+                <code>
+                    < a href="#" onclick="alert('ciao');">clicca qui< /a >
+                </code>
+            </div>
+            <p>
+                Nella pratica spesso si preferisce evitare di associare un comportamento direttamente all'interno di un tag, ma non è escluso si possano utilizzare.
+            </p>
+            <table>
+                <thead>
+                    <tr><td>Attributo</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>onclick</td>
+                        <td>
+                        <ul>
+                            <li>
+                                Il termine "Rileva il click (o il tap) effettuato sull'elemento" si riferisce alla capacità di un dispositivo di rilevare quando un utente fa clic o tocca un elemento sullo schermo.
+                            </li>
+                            <li>
+                                Questa funzionalità è importante per consentire alle applicazioni o ai siti web di rispondere alle azioni degli utenti in modo appropriato.
+                            </li>
+                            <li>
+                                Rilevare il click o il tap su un elemento può essere utile per attivare determinate azioni o interazioni all'interno di un'applicazione o di un sito web.
+                            </li>
+                        </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>onload</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Associa un comportamento alla conclusione del caricamento dell'elemento significa che si può specificare un'azione o una funzione da eseguire quando un elemento ha terminato il caricamento.
+                                </li>
+                                <li>
+                                    Questo comportamento può essere attivato da eventi come il completamento del caricamento di un'immagine, l'esecuzione di uno script o lo scaricamento di un file.
+                                </li>
+                                <li>
+                                    È possibile utilizzare questa funzionalità per eseguire azioni aggiuntive o visualizzare contenuti correlati una volta che l'elemento è stato caricato con successo.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>onscroll</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Attivare un comportamento correlato allo scrolling della pagina significa che si verifica un'azione o una reazione quando si scorre su una pagina web.
+                                </li>
+                                <li>
+                                    Questo comportamento può essere associato a vari elementi o eventi sulla pagina.
+                                </li>
+                                <li>
+                                    Può essere utilizzato per creare interazioni o animazioni dinamiche durante lo scrolling.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ondrag</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    L'evento ondrag si verifica quando viene trascinata una selezione.
+                                </li>
+                                <li>
+                                    È una funzionalità comune nell'HTML per il trascinamento e rilascio di oggetti.
+                                </li>
+                                <li>
+                                    Viene utilizzato per definire la destinazione di un'operazione di trascinamento e rilascio.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Possiamo trovare un <a href="https://www.w3.org/wiki/HTML/Attributes/_Global" target="_blank" rel="noopener noreferrer">elenco completo dei global attributes</a> sul sito del W3C.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Gli attributi data- (data-attributes)
+            </h2>
+            <p>
+                Gli "data-attributes" sono attributi introdotti nello standard HTML5 per memorizzare informazioni utili alla gestione del layout o all'interfaccia utente.
+                Gli attributi vengono definiti con il prefisso "data-" seguito dal nome e possono essere assegnati un valore come gli altri attributi.
+                Questi attributi sono utili per personalizzare e manipolare elementi HTML tramite JavaScript o CSS.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < ul id="elenco" >
+                    < li data-indirizzo="Piazza la lenza" data-telefono="3863535555">Luca< /li >
+                    < li data-indirizzo="Via le mani dal naso" data-telefono="3164192342">Paolo< /li >
+                    < li data-indirizzo="Largo la loggia" data-telefono="3213344314">Umberto< /li >
+                    < /ul >
+                </pre>
+                <p>
+                    L'inserimento di questi attributi personalizzati non avrà alcun effetto sulla resa della pagina. Il browser si limiterà ad ignorarli.
+                </p>
+            </div>
+        </section>
+
+        <section class="buttonsection">
+            <a href="elementi-e-tag-in-html.html">Precedente</a>
+            <a href="titoli-paragrafi-e-testi.html">Seguente</a>
+        </section>
+    </section>
+
+</main>
+
+    
+</body>
+</html>

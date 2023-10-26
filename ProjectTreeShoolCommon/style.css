@@ -12,6 +12,19 @@ html{
     background-color: #0b1622;
 }
 
+h1,h2,h3{
+    text-transform: uppercase;
+    color: forestgreen;
+}
+
+li{
+    padding: 20px 0;
+}
+
+p{
+    padding: 1% 0;
+}
+
 a{
     text-decoration: none;
     transition: 0.4s;
@@ -24,6 +37,13 @@ a:hover{
     transform: scale(1.2);
 }
 
+tr{
+    background-color: #151f2e;
+}
+td{
+    padding: 20px;
+    border-radius: 5px;
+}
 /* nav section start */
 
 .navbar{
@@ -61,59 +81,102 @@ a:hover{
     gap: 5%;
     text-transform: capitalize;
 }
+/* header start */
 
-/* main start */
-
-.header{
+header{
     position: relative;
     top: 10vmin;
     left: 0;
-}
-
-/* header start */
-
-.sectionheader{
-    width: 100%;
-    background-color:  #11161d;
     display: flex;
     justify-content: center;
-    margin: 1% 0;
+    margin-bottom: 2%;
 }
 
 .headercontainer{
-    width: 70%;
+    width: 60%;
+}
+
+.headercontainer h1{
+    font-size: 3em;
+    padding: 2% 0;
+    text-transform: uppercase;
+}
+
+.headercontainer p{
+    padding: 0;
+}
+
+/* main start */
+
+main{
+    position: relative;
+    top: 10vmin;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.mainsection{
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
 
-.headertextcenter{
-    width: 70%;
-    text-align: center;
-    color: #fff;
-    margin: 15%;
+section{
+    margin-bottom: 5%;
 }
 
-.headertextcenter h1{
-    font-size: 4em;
-    text-transform: uppercase;
+.codecontainer{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #151f2e;
+    padding: 24px;
+    border-radius: 5px;
 }
 
-.headerundercontainer{
+
+section a{
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+section a:hover{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+.imgcontainer{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.headerunder{
-    width: 20%;
+.imgcontainer img{
+    width: 70%;
+}
+
+.buttonsection{
+    width: 100%;
+    margin-top: 2%;
     margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
 }
 
-.headerunder h3{
-    font-size: 2.5em;
+.buttonsection a{
+    width: 15%;
+    text-align: center;
+    padding: 1%;
+    background-color: forestgreen;
+    border-radius: 10px;
 }
 
-.headerunder p{
-    font-size: 1.2em;
+.buttonsection a:hover{
+    background-color: white;
+    color: forestgreen;
+    text-transform: none;
 }
+
 

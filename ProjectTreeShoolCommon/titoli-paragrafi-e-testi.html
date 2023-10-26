@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- links -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementi-e-tag-in-html</title>
+</head>
+<body>
+<!-- nav section start -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="/Homepage.html"><img src="/logoimg/logo.webp" alt="logoimg"></a>
+        </div>
+        <div class="links-container">
+            <a href="/index.html">Html</a>
+            <a href="">css</a>
+            <a href="">javascript</a>
+            <a href="">esercizi</a>
+        </div>
+    </div>
+</nav>
+<!-- nav section end -->
+
+<header class="header">
+    <div class="headercontainer">
+        <h1>
+            Titoli, paragrafi e testi
+        </h1>
+        <p>
+            Organizzare il testo in una pagina Web semanticamente, sfruttando le funzioni intrinseche dei tag
+        </p>
+    </div>
+</header>
+<main>
+    <!-- main section start -->
+    <section class="mainsection">
+        <!-- sections start -->
+        <section>
+            <p>
+                HTML è un linguaggio di markup utilizzato per la creazione di contenuti ipertestuali.
+                La maggior parte dei tag in HTML sono stati creati per l'organizzazione dei testi, come la definizione di titoli, paragrafi e sezioni.
+                HTML è stato progettato per la realizzazione di contenuti ipertestuali, quindi è naturale che sia focalizzato sulla strutturazione e organizzazione dei testi.
+            </p>
+            <p>Questa organizzazione si riferisce alla struttura e alla semantica di una pagina web, piuttosto che all'aspetto grafico.
+                Nel corso del tempo, i tag HTML che definivano gli aspetti grafici sono stati deprecati, mentre quelli che identificano sezioni e porzioni significative del testo sono rimasti.
+                L'obiettivo è creare una struttura ben organizzata e significativa per facilitare l'accessibilità e l'indicizzazione dei contenuti web.
+            </p>
+            <p>
+                È anche vero che i browser utilizzano questi tag anche per dare maggior chiarezza al testo assegnando loro degli stili preconfezionati.
+            </p>
+        </section>
+        <section>
+            <h2>
+                I paragrafi < p ></p>
+            </h2>
+            <p>
+                Nei documenti HTML, i paragrafi vengono rappresentati utilizzando l'elemento < p >.
+                La suddivisione del testo in paragrafi migliora la leggibilità e la comprensibilità del contenuto.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < p >Nel primo paragrafo di questa trattazione, ci occuperemo
+                dell'importanza del testo nel Web. Grazie ad un semplice esempio
+                possiamo sperimentare molte cose.< /p >
+                < p >Per default il browser manderà a capo il contenuto di questo
+                secondo paragrafo.< /p >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/06.paragraph.png" alt="">
+            </div>
+            <p>
+                Si tratta di un elemento di tipo Block nel linguaggio HTML.
+                Questo elemento viene utilizzato per formattare il testo, stabilendo margini e andando a capo al termine del paragrafo.
+                È ampiamente utilizzato dai CMS come WordPress per gestire la formattazione del testo.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Andare a capo, < br ></p>
+            </h2>
+            <p>
+                Il tag <br> è utilizzato per andare a capo nel bel mezzo di un testo in HTML.
+                Nonostante l'andare a capo all'interno dell'editor, il testo nel browser non va a capo fino alla fine dello spazio disponibile per il suo contenitore.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < p >Nel primo paragrafo di questa trattazione, ci occuperemo
+                dell'importanza del testo nel Web. Grazie ad un semplice esempio
+                possiamo sperimentare molte cose.< /p >
+                < p >Per default il browser manderà a capo il contenuto di questo
+                secondo paragrafo.< /p >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/06.br_.png" alt="">
+            </div>
+            <p>
+                Per forzare il testo ad andare a capo, inseriamo un <br>, in questo modo:
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    Questo è un testo che va a capo
+                    spesso all'interno dell'editor
+                    tuttavia i browser ignoreranno
+                    questo fatto e considereranno < br >
+                    il testo come una singola
+                    riga continua, che va a capo
+                    solo quando incontra il limite
+                    del proprio contenitore
+                </pre>
+            </div>
+        </section>
+        <section>
+            <h2>
+                Headings, i titoli h1, h2, h3, etc.
+            </h2>
+            <p>I titoli (headings) sono tag che definiscono il tema della pagina.
+                Sono rappresentati in grassetto e con una dimensione del testo ingrandita.
+                Sono elementi di tipo block e la loro importanza determina le dimensioni e il margine applicato dal browser.
+            </p>
+            <h3>
+                Gerarchia degli headings
+            </h3>
+            <p>
+                I titoli dei paragrafi sono gerarchici, con h1 come il titolo principale e h6 come il titolo più specifico.
+                È consigliato utilizzare h2 per le sezioni importanti del testo e h3 per le sottosezioni.
+                L'utilizzo dei titoli gerarchici aiuta a organizzare e strutturare il contenuto della pagina.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < h1 >Casa< /h1 >
+                    < h2 >Acquistare la casa< /h2 >
+                    < h3 >Le pratiche per l'acquisto di casa< /h3 >
+                    < h3 >Agenzie immobiliari, quali scegliere< /h3 >
+                    < h2 >Arredare la casa< /h2 >
+                    < h3 >Come scegliere la cucina per la nuova casa< /h3 >
+                    < h3 >Lampadari, tipologie e differenze< /h3 >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/06.headings.png" alt="">
+            </div>
+            <p>
+                La gerarchia degli heading ha un impatto sul peso che hanno in termini di tematizzazione della pagina.
+                I SEO consigliano di inserire le parole chiave principali nell'h1 per definire il contenuto e le parole chiave accessorie negli h2.
+                L'uso corretto degli heading può migliorare la leggibilità del contenuto e il posizionamento nella SEO.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Gerarchia degli headings nelle home page
+            </h2>
+            <p>
+                L'utilizzo degli heading tags (h1, h2, h3, h4, h5) sulla home page di un sito web è importante per organizzare e strutturare i contenuti in modo chiaro.
+                L'h1 dovrebbe essere utilizzato per il nome del sito, l'h2 per le categorie e l'h3 per i titoli degli ultimi contenuti pubblicati o i più importanti.
+                L'h4 può essere utilizzato per i titoli di altri contenuti correlati e l'h5 per contenuti meno importanti o meno correlati con il tema della pagina.                
+            </p>
+        </section>
+        <section class="buttonsection">
+            <a href="gli-attributi.html">Precedente</a>
+            <a href="grassetti-e-corsivi-usare-i-tag-strong-em-b-e-i.html">Seguente</a>
+        </section>
+    </section>
+
+</main>
+
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- links -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementi-e-tag-in-html</title>
+</head>
+<body>
+<!-- nav section start -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="/Homepage.html"><img src="/logoimg/logo.webp" alt="logoimg"></a>
+        </div>
+        <div class="links-container">
+            <a href="/index.html">Html</a>
+            <a href="">css</a>
+            <a href="">javascript</a>
+            <a href="">esercizi</a>
+        </div>
+    </div>
+</nav>
+<!-- nav section end -->
+
+<header class="header">
+    <div class="headercontainer">
+        <h1>
+            Elementi e tag in HTML
+        </h1>
+        <p>            
+            Cosa sono gli elementi e i TAG in HTML, la semantica, la definizione del layout, le tipologie di elementi e l'alberatura del DOM
+        </p>
+    </div>
+</header>
+<main>
+    <!-- main section start -->
+    <section class="mainsection">
+        <!-- sections start -->
+        <section>
+            <p>
+                In una pagina HTML, gli elementi sono connotati da tag, che sono marcatori che definiscono il ruolo e l'organizzazione dei contenuti.
+                I tag non definiscono l'aspetto visivo degli elementi, ma piuttosto il loro significato e scopo.
+                Ad esempio, un tag h1 indica che il testo all'interno rappresenta il titolo principale della pagina.
+            </p>
+            <ul>
+                <li>
+                    Una visione "semantica" degli elementi è fondamentale per l'organizzazione delle informazioni su una pagina web.
+                    Associare una pagina a una keyword o a un tema facilita la sua individuazione nelle ricerche online.
+                    È importante curare l'organizzazione del testo, la definizione dei titoli, dei link e dei caratteri in grassetto per garantire una buona semantica della pagina.
+                </li>
+                <li>                    
+                    In HTML è possibile definire lo scheletro dell'interfaccia utente di un'app.
+                    I tag diventano utili per organizzare il layout e definire aree specifiche per l'esperienza utente.
+                </li>
+            </ul>
+            <p>                
+                In entrambi i casi, si sta facendo riferimento alla struttura invece della grafica.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Come è fatto un tag
+            </h2>
+            <p>                    
+                Un tag è una keyword del linguaggio HTML racchiusa tra parentesi angolari (<>).
+                I tag HTML non sono "case sensitive", quindi scrivere un tag in maiuscolo o minuscolo è la stessa cosa.
+                La consuetudine è quella di scrivere i tag in minuscolo, anche se non è obbligatorio.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Elementi contenitori e autonomi, il DOM
+            </h2>
+            <p>
+                Gli elementi contenitori sono utilizzati in HTML per descrivere porzioni di pagina, aree o contenuti.
+                Gli elementi autonomi sono utilizzati per rappresentare contenuti indipendenti che non richiedono ulteriori elementi di supporto.
+                Il DOM (Document Object Model) è una rappresentazione strutturata di un documento HTML che consente di accedere e manipolare gli elementi della pagina web.
+            </p>
+            <p>
+                Pertanto un elemento HTML è quasi sempre un contenitore e il suo contenuto è delimitato da:
+            </p>
+            <ul>
+                <li>tag di apertura (es. < p >);</li>
+                <li>tag di chiusura (es. < /p >).</li>
+            </ul>
+            <div class="codecontainer">
+                <pre>
+                    < p >Lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt, ut labore et dolore
+                        magnam aliquam quaerat voluptatem.< /p >
+                </pre>
+            </div>
+            <p>
+                Le pagine HTML sono quindi formate per composizione di contenitori (annidati) l'uno dentro l'altro. Per capire meglio riprendiamo il nostro semplice esempio:
+            </p>
+
+            <div class="codecontainer">
+                <pre>
+                    < !doctype html >
+                    < html lang="it" >
+                    < head >
+                    < title >Ciao Mondo!< /title >
+                    < /head >
+                    < body >
+                    < h1 >Ciao Mondo!< /h1 >
+                    < p >Questa è la nostra prima pagina HTML!< /p >
+                    < img src="immagine.jpg" >
+                    < /body >
+                    < /html >
+                </pre>
+            </div>
+
+            <p>
+                La struttura che emerge è quella di un albero, in cui i rami sono tutti tag contenitori e le estremità sono composte da testi, immagini o altri elementi come le caselle di input. Tutti questi elementi finali non sono contenitori e non necessitano di un tag di chiusura.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    html
+                    |
+                    +---head
+                    | |
+                    | +---title
+                    | |
+                    | +---"Sono un testo!"
+                    |
+                    +---body
+                    |
+                    +---h1
+                    |
+                    +---"Sono un testo!"
+                    |
+                    p
+                    |
+                    +---"Il DOM è il modello del documento HTML!"
+                    |
+                    img
+                </pre>
+            </div>
+            <p>
+                L'albero tracciato rappresenta il documento nella memoria del browser, chiamato DOM (Document Object Model)
+                Il DOM è il modello del documento HTML, con l'elemento <html> come nodo radice
+                Il DOM fornisce una rappresentazione gerarchica del documento HTML come un albero di oggetti
+            </p>
+        </section>
+        <section>
+            <h2>
+                Indentare il codice
+            </h2>
+            <p>
+                Indentare il codice significa utilizzare spazi o tabulazioni per organizzare gerarchicamente il codice sorgente.
+                L'indentazione rende il codice più comprensibile e chiaro a chi lo legge.
+                L'indentazione può essere effettuata utilizzando strumenti specifici o manualmente.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Elementi inline e block, le tipologie di tag per il layout
+            </h2>
+            <p>
+                Gli elementi inline e block sono tipologie di tag HTML utilizzati per il layout delle pagine web.
+                Gli elementi di tipo inline sono visualizzati all'interno di un paragrafo o di un altro elemento di blocco, occupando solo lo spazio necessario.
+                Gli elementi di tipo block vengono visualizzati come blocchi separati e occupano l'intera larghezza disponibile.
+            </p>
+            <p>
+                Le principali tipologie di visualizzazione in cui si dividono gli elementi sono:
+            </p>
+            <table>
+                <thead>
+                    <tr><td>Tipologia</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Block (elementi blocco)</td>
+                        <td>
+                        <ul>
+                            <li>
+                                Gli elementi che costituiscono un blocco attorno a sé sono elementi contenitori nell'albero di un documento HTML.
+                            </li>
+                            <li>
+                                Questi elementi non fanno parte del testo e mandano a capo, come i paragrafi, i div o le section.
+                            </li>
+                            <li>
+                                La loro presenza permette di organizzare e strutturare il contenuto di una pagina web.
+                            </li>
+                        </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Inline (elementi "in linea")</td>
+                        <td>
+                            Elementi che non vanno a capo e possono essere integrati nel testo, come i link, le immagini, oppure gli span.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Liste</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Le liste numerate e non numerate sono simili agli elementi blocco con una struttura particolare.
+                                </li>
+                                <li>
+                                    Sono ideali per definire elenchi o menu.
+                                </li>
+                                <li>                                    
+                                    Le liste numerate utilizzano numeri per elencare gli elementi, mentre le liste non numerate utilizzano punti o simboli.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="buttonsection">
+            <a href="index.html">Precedente</a>
+            <a href="gli-attributi.html">Seguente</a>
+        </section>
+    </section>
+
+</main>
+
+    
+</body>
+</html>
