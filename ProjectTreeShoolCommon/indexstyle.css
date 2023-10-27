@@ -610,14 +610,14 @@ section a:hover{
     /* main section start */
     
     .mainsection{
-        width: 400px;
+        width: 90%;
         display: flex;
     }
     
     /* sections start */
     
     section{
-        width: 400px;
+        width: 90%;
     }
     
     section h2{

@@ -326,6 +326,101 @@ a:hover{
     
 }
 
+@media screen and (max-width: 900px) {
+
+    .navbar{
+        background-color: #11161d;
+        width: 900px;
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-container{
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 90px;
+    }
+    
+    .logo img{
+        width: 100%;
+    }
+    
+    .links-container{
+        width: 900px;
+        display: flex;
+        justify-content: space-around;
+        text-transform: capitalize;
+    }
+
+/* main start */
+
+.header{
+    position: relative;
+    top: 100px;
+    left: 0;
+}
+
+/* header start */
+
+.sectionheader{
+    width: 900px;
+    background-color:  #11161d;
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+.headercontainer{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headertextcenter{
+    width: 690px;
+    text-align: center;
+    color: #fff;
+}
+
+.headertextcenter h1{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.headerundercontainer{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerunder{
+    width: 690px;
+    margin-bottom: 2%;
+}
+
+.headerunder h3{
+    font-size: 2em;
+}
+
+.headerunder p{
+    font-size: 1em;
+}
+    
+}
+
 @media screen and (max-width: 700px) {
 
     .navbar{

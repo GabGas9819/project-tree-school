@@ -180,3 +180,580 @@ section a:hover{
 }
 
 
+/* media query */
+
+@media screen and (max-width:1800px) {
+    .navbar{
+        background-color: #11161d;
+        width: 1800px;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-container{
+        width: 1260px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 100px;
+    }
+    
+    .logo img{
+        width: 100%;
+    }
+    
+    .links-container{
+        width: 480px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+        text-transform: capitalize;
+    }
+    
+    header{
+        position: relative;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 1800px;
+    }
+
+    .headercontainer{
+        width: 1080px;
+    }
+
+    .headercontainer h1{
+        font-size: 3em;
+        padding: 2% 0;
+        text-transform: uppercase;
+    }
+
+    .headercontainer p{
+        padding: 0;
+    }
+   /* main start */
+
+    main{
+        position: relative;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 1800px;
+    }
+
+    .mainsection{
+        width: 1080px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        margin-bottom: 5%;
+    }
+
+    .codecontainer{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        background-color: #151f2e;
+        padding: 24px;
+        border-radius: 5px;
+        overflow-y: scroll;
+    }
+
+    .imgcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgcontainer img{
+        width: 70%;
+    }
+
+    .buttonsection{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .navbar{
+        background-color: #11161d;
+        width: 1300px;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-container{
+        width: 910px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 100px;
+    }
+    
+    .logo img{
+        width: 100%;
+    }
+    
+    .links-container{
+        width: 480px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+        text-transform: capitalize;
+    }
+    
+    header{
+        position: relative;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 1300px;
+    }
+
+    .headercontainer{
+        width: 910px;
+    }
+
+    .headercontainer h1{
+        font-size: 3em;
+        padding: 2% 0;
+        text-transform: uppercase;
+    }
+
+    .headercontainer p{
+        padding: 0;
+    }
+   /* main start */
+
+    main{
+        position: relative;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 1300px;
+    }
+
+    .mainsection{
+        width: 910px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        margin-bottom: 5%;
+    }
+
+    .codecontainer{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        background-color: #151f2e;
+        padding: 24px;
+        border-radius: 5px;
+        overflow-y: scroll;
+    }
+
+    .imgcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgcontainer img{
+        width: 70%;
+    }
+
+    .buttonsection{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar{
+        background-color: #11161d;
+        width: 900px;
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-container{
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 90px;
+    }
+    
+    .logo img{
+        width: 100%;
+    }
+    
+    .links-container{
+        width: 900px;
+        display: flex;
+        justify-content: space-around;
+        text-transform: capitalize;
+    }
+    
+    header{
+        position: relative;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 900px;
+    }
+    
+    .headercontainer{
+        width: 80%;
+    }
+    
+    .headercontainer h1{
+        font-size: 3em;
+        padding: 2% 0;
+        text-transform: uppercase;
+    }
+    
+    .headercontainer p{
+        padding: 0;
+    }
+    
+    /* main start */
+    
+    main{
+        position: relative;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 900px;
+    }
+    
+    .mainsection{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section{
+        margin-bottom: 5%;
+    }
+    
+    .codecontainer{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        background-color: #151f2e;
+        padding: 24px;
+        border-radius: 5px;
+    }
+    
+    .imgcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imgcontainer img{
+        width: 70%;
+    }
+    
+    .buttonsection{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+    
+    .buttonsection a{
+        width: 15%;
+        text-align: center;
+        padding: 1%;
+        background-color: forestgreen;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .navbar{
+        background-color: #11161d;
+        width: 700px;
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-container{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 90px;
+    }
+    
+    .logo img{
+        width: 100%;
+    }
+    
+    .links-container{
+        width: 700px;
+        display: flex;
+        justify-content: space-around;
+        text-transform: capitalize;
+    }
+    
+    header{
+        position: relative;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 700px;
+    }
+    
+    .headercontainer{
+        width: 80%;
+    }
+    
+    .headercontainer h1{
+        font-size: 3em;
+        padding: 2% 0;
+        text-transform: uppercase;
+    }
+    
+    .headercontainer p{
+        padding: 0;
+    }
+    
+    /* main start */
+    
+    main{
+        position: relative;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 700px;
+    }
+    
+    .mainsection{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section{
+        margin-bottom: 5%;
+    }
+    
+    .codecontainer{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        background-color: #151f2e;
+        padding: 24px;
+        border-radius: 5px;
+    }
+    
+    .imgcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imgcontainer img{
+        width: 70%;
+    }
+    
+    .buttonsection{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+    
+    .buttonsection a{
+        width: 15%;
+        text-align: center;
+        padding: 1%;
+        background-color: forestgreen;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .navbar{
+        background-color: #11161d;
+        width: 400px;
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-container{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 90px;
+    }
+    
+    .logo img{
+        width: 100%;
+    }
+    
+    .links-container{
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+        text-transform: capitalize;
+    }
+    
+    header{
+        position: relative;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 400px;
+    }
+    
+    .headercontainer{
+        width: 80%;
+    }
+    
+    .headercontainer h1{
+        font-size: 3em;
+        padding: 2% 0;
+        text-transform: uppercase;
+    }
+    
+    .headercontainer p{
+        padding: 0;
+    }
+    
+    /* main start */
+    
+    main{
+        position: relative;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        width: 400px;
+    }
+    
+    .mainsection{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section{
+        margin-bottom: 5%;
+    }
+    
+    .codecontainer{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        background-color: #151f2e;
+        padding: 24px;
+        border-radius: 5px;
+    }
+    
+    .imgcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imgcontainer img{
+        width: 70%;
+    }
+    
+    .buttonsection{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+    
+    .buttonsection a{
+        width: 15%;
+        text-align: center;
+        padding: 1%;
+        background-color: forestgreen;
+        border-radius: 10px;
+    }
+}
