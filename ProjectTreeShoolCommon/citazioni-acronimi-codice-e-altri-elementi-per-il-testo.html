@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- links -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementi-e-tag-in-html</title>
+</head>
+<body>
+<!-- nav section start -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="/Homepage.html"><img src="/logoimg/logo.webp" alt="logoimg"></a>
+        </div>
+        <div class="links-container">
+            <a href="/index.html">Html</a>
+            <a href="">css</a>
+            <a href="">javascript</a>
+            <a href="">esercizi</a>
+        </div>
+    </div>
+</nav>
+<!-- nav section end -->
+
+<header class="header">
+    <div class="headercontainer">
+        <h1>
+            Citazioni, acronimi, codice e altri elementi per il testo
+        </h1>
+        <ul>
+            <li>
+                L'argomento riguarda l'utilizzo dei tag HTML per inserire citazioni, apici e pedici, acronimi e abbreviazioni, codice sorgente o altro nei testi.
+            </li>
+            <li>
+                Esaminando i tag HTML più utilizzati per i testi, è possibile utilizzare diversi elementi e attributi per formattare e strutturare i contenuti testuali di una pagina web.
+            </li>
+            <li>
+                Questo è particolarmente utile per creare una formattazione corretta e organizzata del testo e per inserire elementi speciali come citazioni, acronimi e codice sorgente all'interno del contenuto.
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <!-- main section start -->
+    <section class="mainsection">
+        <!-- sections start -->
+        <section>
+            <p>
+                Nel testo può essere utile inserire citazioni di frasi celebri, apici e pedici, usare degli acronimi e delle abbreviazioni, codice sorgente o demarcare alcune parole. Esaminiamo gli elementi HTML più utilizzati per lavorare sui testi.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Citazioni, cite e blockquote
+            </h2>
+            <h3>
+                Blockquote
+            </h3>
+            <p>
+                Il tag < blockquote > è un elemento del linguaggio HTML5 che viene utilizzato per ospitare contenuti citati da altre fonti, come ad esempio commenti di altri utenti in un blog.
+                All'interno del tag < blockquote > è possibile inserire dei riferimenti alla fonte dei contenuti, utilizzando gli elementi < cite > o < footer >.
+                L'utilizzo del tag < blockquote > è parte della specifica HTML5 e consente di strutturare correttamente il contenuto citato.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < blockquote >
+                        < p >[...] fatti non foste a viver come bruti, ma per seguir virtute e canoscenza< /p >
+                        < cite >Inferno Canto XXVI - La Divina Commedia< /cite >
+                    < /blockquote >
+                </pre>
+            </div>
+            <p>
+                Si tratta di un elemento di tipo block e nella rappresentazione di base dei browser il blocco viene separato dal resto del testo con un margine a destra e a sinistra.
+            </p>
+            <div class="imgcontainer">
+                <img src="img/10.blockquote.png" alt="">
+            </div>
+            <p>                
+                Il tag "< cite >" è stato spesso utilizzato in modo improprio per definire delle note nel testo.
+                L'uso delle note nei titoli delle sezioni è deprecato.
+            </p>
+        </section>
+        <section>
+            <h3>cite</h3>
+            <p>
+                Il tag < cite > viene utilizzato per riportare il nome di un'opera di ingegno, come il titolo di un libro, un film o una canzone, da cui è stata presa una citazione.
+                È un elemento inline che appare in corsivo.
+                Può anche essere utilizzato per riportare il nome di un autore o del personaggio che ha coniato una frase.
+            </p>
+        </section>
+        <section>
+            <h3>q</h3>
+            <p>
+                Il tag < q > è utilizzato per inserire citazioni direttamente all'interno di un testo.
+                Questo tag è un elemento inline e permette di specificare una frase presa da un'opera letteraria o da una fonte senza doverle dedicare un blocco separato.
+                Le citazioni inserite con il tag < q > appaiono in corsivo di default.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < p >Avrei spronato i miei colleghi a fare di più, li avrei incalzati citando
+                    < cite >Dante Alighieri< /cite >: "< q >Fatti non foste a viver come bruti< /q >".< /p >
+                </pre>
+            </div>
+        </section>
+        <section>
+            <h2>Acronimi e abbreviazioni</h2>
+            <p>
+                In passato era possibile utilizzare il tag "acronym" per le sigle o gli acronimi, ma questo è stato deprecato.
+                Il tag "< abbr >" è stato introdotto come alternativa per le abbreviazioni.
+                Il tag "< abbr >" era originariamente previsto solo per le abbreviazioni, ma è stato poi utilizzato anche per le sigle e gli acronimi.
+            </p>
+        </section>
+        <section>
+            <h3>abbr</h3>
+            <p>
+                Il tag "abbr" viene utilizzato per abbreviazioni e sigle.
+                Viene usato per scrivere la versione breve di una frase o parola.
+                Possiamo aggiungere la versione lunga o la definizione dell'acronimo utilizzando l'attributo "title".
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < p >In questa guida approfondiamo l'< abbr title="HyperText Markup Language" >HTML< /abbr >
+                    e ne esploriamo i tag e le potenzialità espressive.< /p >
+                </pre>
+            </div>
+            <p>
+                Si tratta di un elemento inline che mostra un tooltip al passaggio del mouse.
+                Il tooltip contiene il testo completo associato all'elemento.
+                La rappresentazione di default del tooltip può essere personalizzata.
+            </p>
+            <div class="imgcontainer">
+                <img src="img/10.abbr_.png" alt="">
+            </div>
+            <p>
+                L'abbreviazione è una riduzione grafica di una parola per risparmiare tempo e spazio nella scrittura.
+                Quando si tratta di dare una definizione di una parola tecnica, si può utilizzare "< dfn >", che indica che la parola successiva è una definizione.
+                Le abbreviazioni possono essere utilizzate per alleggerire un testo quando un termine viene ripetuto.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < dfn title="Insieme di componenti software, che rende operativi computer, apparati e dispositivi informatici">Sistema Operativo< /dfn >
+                </pre>
+            </div>
+            <p>
+                La rappresentazione di base è simile a quella di abbr e anche in questo caso è previsto il tooltip che contiene la spiegazione.
+            </p>
+        </section>
+        <section>
+            <h2>Apici e pedici</h2>
+            <p>
+                Inserire un apice o un pedice è un'operazione che ha a che fare con la formattazione del testo.
+                Gli apici e i pedici vengono utilizzati per inserire numeri o simboli in piccolo formato, sopra o sotto la linea di base del testo.
+                Questa formattazione è spesso utilizzata in ambiti come la matematica, la chimica o la tipografia.
+            </p>
+            <h3>sup e sub</h3>
+            <p>
+                I tag < sup > e < sub > vengono utilizzati per gli apici e i pedici rispettivamente.
+                Questi tag sono elementi inline e la loro rappresentazione di default sui browser è quella di caratteri rimpiccioliti e posti più in alto o più in basso a seconda che si tratti di un apice o di un pedice.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    E = mc< sup >2< /sup >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/09.sup_.png" alt="">
+            </div>
+        </section>
+        <section>
+            <p>
+                Se vogliamo rappresentare una variabile, la famosa 'x' della scuola possiamo usare il tag <var>:
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < var >x< sub >i< /sub >< /var >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/09.sub_.png" alt="">
+            </div>
+        </section>
+        <section>
+            <h2>Codice e testo pre formattato</h2>
+            <p>
+                Il codice e il testo preformattato si riferiscono alla formattazione del testo in un formato specifico.
+                Il codice preformattato viene utilizzato per mostrare a video il testo così come è stato scritto nel codice, mantenendo spazi e ritorni a capo.
+                Questo tipo di formattazione è spesso utilizzato per visualizzare codice di programmazione o testi simili in modo leggibile e strutturato.                
+                I tag code e pre possono essere utilizzati per formattare correttamente le parole chiave o il codice nel testo.
+                Questa pratica è comune per chi lavora con il codice o ha bisogno di evidenziare parti specifiche di testo.
+            </p>
+            <h3>pre</h3>
+            <p>
+                Il tag < pre > viene utilizzato per scrivere del testo pre-formattato che mantiene la stessa formattazione impostata nell'editor.
+                Quando si utilizza il tag < pre > e si va a capo o si inseriscono molti spazi tra le parole, il browser mostrerà il testo con la stessa formattazione.
+                Questo tag viene spesso utilizzato per mostrare codice o testo che richiede una formattazione specifica.
+            </p>
+            <p>
+                Il tag in questione forza l'aspetto del contenuto e lo rappresenta con un carattere "monospaced" (tutte le lettere hanno la stessa larghezza).
+                Questo tag viene utilizzato per controllare l'aspetto visivo del testo.
+                Il suo contenuto viene rappresentato con un carattere monospaced.
+            </p>
+            <h3>code, ma anche kbd e samp</h3>
+            <p>                
+                I tag HTML come "code", "kbd" e "samp" sono utilizzati per rappresentare parti di codice o testo di input/output in un documento HTML.
+                Il tag "code" viene utilizzato per mostrare il codice di programmazione all'interno di un documento HTML.
+                Il tag "kbd" viene utilizzato per mostrare l'input da tastiera all'interno di un documento HTML.
+                Il tag "samp" viene utilizzato per mostrare l'output di un programma o un esempio di testo all'interno di un documento HTML.
+            </p>
+            <table>
+                <thead>
+                    <tr><td>Tag</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>< code ></td>
+                        <td>
+                            Descrive brani di codice sorgente
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< kbd ></td>
+                        <td>
+                            Indica il testo inserito dagli utenti
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< samp ></td>
+                        <td>
+                            Rappresenta l'output di un programma o di una riga di comando
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Altri elementi per la formattazione del testo</h2>
+            <table>
+                <thead>
+                    <tr><td>Tag</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>< del ></td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Descrizione di un contenuto che si desidera eliminare da un documento di testo.
+                                </li>
+                                <li>                                    
+                                    Tipicamente, viene tracciata una barra sul testo da rimuovere e viene utilizzata la sostituzione < strike >, anche se è già deprecata.
+                                </li>
+                                <li>
+                                    Un'alternativa a < strike > è l'uso di < s >, che indica un testo di nessuna importanza all'interno del documento.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< ins ></td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Questo attributo può essere utile per definire gli aggiornamenti al documento.
+                                </li>
+                                <li>
+                                    Grazie all'utilizzo dell'attributo datetime, è possibile specificare una data precisa per il testo.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< mark ></td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Il testo viene reso "evidenziato" con un colore di sfondo giallino noto come "evidenziatore".
+                                </li>
+                                <li>
+                                    Questo effetto serve a rendere il testo più visibile e rilevante.
+                                </li>
+                                <li>
+                                    L'evidenziatore può essere utilizzato per enfatizzare parti specifiche di un testo.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< time ></td>
+                        <td>
+                            <ul>
+                                <li>
+                                    L'attributo datetime permette di specificare la data e l'ora di un elemento in modo formale.
+                                </li>
+                                <li>
+                                    Questo attributo può essere utilizzato per mostrare una data in un formato qualsiasi.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="buttonsection">
+            <a href="grassetti-e-corsivi-usare-i-tag-strong-em-b-e-i.html">Precedente</a>
+            <a href="commenti-in-html.html">Seguente</a>
+        </section>
+    </section>
+
+</main>
+
+    
+</body>
+</html>
