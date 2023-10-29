@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- links -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenchi puntati e numerati</title>
+</head>
+<body>
+<!-- nav section start -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="/Homepage.html"><img src="/logoimg/logo.webp" alt="logoimg"></a>
+        </div>
+        <div class="links-container">
+            <a href="/index.html">Html</a>
+            <a href="">css</a>
+            <a href="">javascript</a>
+            <a href="">esercizi</a>
+        </div>
+    </div>
+</nav>
+<!-- nav section end -->
+
+<header class="header">
+    <div class="headercontainer">
+        <h1>
+            Elenchi puntati e numerati
+        </h1>
+        <p> 
+            Gli elenchi ordinati, non ordinati e le liste di definizione sono elementi utilizzati per organizzare e strutturare le informazioni in una pagina web.
+            Questi elementi aumentano la semantica della pagina, rendendo più chiara la struttura e l'organizzazione dei contenuti.
+            Gli elenchi ordinati sono numerati, gli elenchi non ordinati sono puntati, mentre le liste di definizione forniscono una breve descrizione per ogni elemento.
+        </p>
+    </div>
+</header>
+<main>
+    <!-- main section start -->
+    <section class="mainsection">
+        <!-- sections start -->
+        <section>
+            <p>
+                Gli elenchi giocano un ruolo importante nei testi e nella definizione di elementi strutturali delle pagine HTML.
+                Sono utili per organizzare il testo sintetizzando concetti per punti, indicando le fasi di un processo o creando un elenco di definizioni o un glossario.
+            </p>
+            <p>
+                Nella organizzazione della struttura della pagina, gli elenchi puntati sono spesso utilizzati per definire menu o altre liste di informazioni.
+                Dal punto di vista del rendering, gli elenchi puntati spezzano il ritmo tipografico e rendono il testo più gradevole e leggibile.
+            </p>
+            <table>
+                <thead>
+                    <tr><td>Tag</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elenchi ordinati</td>
+                        <td>
+                            Gli elenchi ordinati sono un tipo di elenco utilizzato per 
+                            organizzare le informazioni in un ordine specifico. 
+                            In HTML, gli elenchi ordinati sono creati utilizzando il tag 
+                            < ol >, e ogni elemento dell'elenco è indicato con il tag < li >. 
+                            Gli elenchi ordinati sono utilizzati per numerare gli 
+                            elementi in sequenza, indicando l'ordine delle voci.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Elenchi non ordinati</td>
+                        <td>
+                            Gli elenchi non ordinati sono un tipo di elenco in cui gli 
+                            elementi non seguono un ordine specifico. In HTML, gli elenchi 
+                            non ordinati vengono creati utilizzando il tag < ul >, mentre 
+                            ogni elemento dell'elenco viene definito con il tag < li >.
+                            Questo tipo di elenco è utile per presentare una serie di 
+                            elementi senza stabilire un ordine gerarchico o sequenziale.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Elenchi di definizioni</td>
+                        <td>
+                            Gli elenchi di definizioni sono una forma di struttura di dati 
+                            utilizzata per organizzare e presentare una serie di termini e 
+                            le loro definizioni. Sono spesso utilizzati in documenti HTML 
+                            per creare elenchi di glossari, glossari tecnici, elenchi di 
+                            parole chiave e altro ancora. Gli elenchi di definizioni possono 
+                            essere creati:
+                            <ul>
+                                <li> 
+                                    utilizzando il tag < dl > per l'elemento padre
+                                </li>
+                                <li>
+                                    utilizzando il tag < dt > per i termini
+                                </li>
+                                <li>
+                                    utlizzando iltag < dd > per le definizioni
+                                </li>
+                            </ul>
+                        </td>
+                </tbody>
+            </table>
+            <p>
+                Ci sono tre tipi di elenchi in HTML: elenchi puntati, elenchi numerati e elenchi di definizioni.
+                Tutti i tipi di elenchi funzionano allo stesso modo: si apre il tag, si elencano gli elementi e si chiude il tag dell'elenco.
+                La sintassi per gli elenchi ha una forma specifica. 
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < elenco >
+                        < elemento >primo elemento< elemento >
+                        < elemento >secondo elemento< elemento >
+                        
+                        < elemento >N-esimo elemento< elemento >
+                    < /elenco >
+                </pre>
+            </div>
+        </section>
+        <section>
+            <h2>
+                UL, gli elenchi non ordinati (o elenchi puntati)
+            </h2>
+            <p>  
+                L'elenco non ordinato è uno dei tag più utilizzati in HTML per creare liste 
+                puntate. Si utilizza il tag < ul > per definire l'inizio dell'elenco e 
+                il tag < li > per ogni elemento della lista. Questo tipo di elenco non 
+                prevede un ordine specifico degli elementi.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < ul >
+                        < li >primo elemento< /li >
+                        < li >secondo elemento< /li >
+                        < li >terzo elemento< /li >
+                      < /ul >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/11.ul_.png" alt="">
+            </div>
+            <p>
+                La resa grafica degli elenchi puntati dipende dal browser utilizzato.
+                Di solito, gli elementi degli elenchi puntati vengono visualizzati uno sotto l'altro con un margine a sinistra e un "pallino pieno" per ogni punto.
+                L'attributo "type" precedentemente utilizzato per personalizzare i caratteri o i simboli degli elenchi puntati è stato deprecato da HTML 5.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Annidare le liste non numerate
+            </h2>
+            <div class="codecontainer">
+                <pre>
+                    < ul >
+                        < li >primo della 1a lista< /li >
+                        < li >secondo della 1a lista
+                            < ul >
+                                < li >primo della 2a lista< /li >
+                                < li >secondo della 2a lista
+                                    < ul >
+                                        < li >primo della 3a lista< /li >
+                                    < /ul >
+                                < /li >
+                                < li >terzo della 2a lista< /li >
+                            < /ul >
+                        < /li >
+                    < /ul >
+                </pre>
+                <p>
+                    Interessante notare che il rendering di base in genere mostra simboli diversi per i punti a seconda del livello dell'elemento.
+                </p>
+                <div class="imgcontainer">
+                    <img src="img/11.ul_.nested.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>
+                OL, gli elenchi ordinati (o elenchi numerati)
+            </h2>
+            <p>
+                Gli elenchi ordinati (ordered list) sono contraddistinti dall'enumerazione 
+                degli elementi che compongono la lista. Il tag da utilizzare per aprire 
+                un elenco ordinato è < ol > e anche in questo caso gli elementi sono 
+                    individuati dal tag < li >:
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    Testo che precede la lista
+                    < ol >
+                        < li >primo elemento< /li >
+                        < li >secondo elemento< /li >
+                        < li >terzo elemento< /li >
+                    < /ol >
+                    Testo che segue la lista
+                </pre>
+                <div class="imgcontainer">
+                    <img src="img/11.ol_.png" alt="">
+                </div>
+                <p>
+                    Avremo quindi una serie progressiva ordinata e individuata da lettere o numeri. Per riprendere il parallelo con i software di videoscrittura, sarebbero i cosiddetti elenchi numerati.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>
+                Attributo type, per descrivere il tipo di elenco
+            </h2>
+            <p>
+                L'attributo "type" applicato al tag "ol" in HTML serve per specificare il tipo di enumerazione che si desidera applicare. Di default, il browser visualizza un elenco numerico, ma è possibile indicare che le voci dell'elenco seguano punti definiti come numeri, lettere dell'alfabeto o numeri romani.
+            </p>
+            <p>
+                Le principali tipologie di visualizzazione in cui si dividono gli elementi sono:
+            </p>
+            <table>
+                <thead>
+                    <tr><td>Valore di type</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>type="1"</td>
+                        <td>
+                            numeri interi "arabi" (valore di default)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>type="a"</td>
+                        <td>
+                            numeri alfabeto minuscolo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>type="A"</td>
+                        <td>
+                            numeri alfabeto maiuscolo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>type="i"</td>
+                        <td>
+                            numeri numeri romani minuscoli
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>type="I"</td>
+                        <td>
+                            numeri numeri romani maiuscoli
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Proviamo quindi a vedere come rendere un elenco annidato con diversi tipi di enumerazione:
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < ol type="1" >< !-- numeri -- >
+                        < li >Primo livello
+                            < ol type="a" >< !-- lettere -- >
+                                < li >Secondo livello
+                                    < ol type="I" >< !-- numeri romani -- >
+                                        < li >Terzo livello< /li >
+                                        < li >Terzo livello< /li >
+                                    < /ol >
+                                < /li >
+                                < li >Secondo livello< /li >
+                            < /ol >
+                        < /li >
+                        < li >Primo livello< /li >
+                    < /ol >
+                </pre>
+                <div class="imgcontainer">
+                    <img src="img/11.ol_.nested.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Start e value, riprendere o gestire la numerazione</h2>
+            <p>
+                Può capitare che per esigenze diverse vogliamo far partire la numerazione da un certo valore, in questo caso ci serviamo di due attributi:
+            </p>
+            <table>
+                <thead>
+                    <tr><td>Attributo</td><td>Si applica al tag</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>start</td>
+                        <td>ol</td>
+                        <td>
+                            indica il valore iniziale da cui far partire la numerazione della lista.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>li
+                            (solo se è all'interno di un ol)</td>
+                        <td>
+                            indica il valore applicato alla numerazione di un certo elemento e modifica la numerazione anche degli elementi successivi nella lista.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="codecontainer">
+                <pre>
+                    < !-- lista che parte da 10 -- >
+                    < ol start="10" >
+                        < li >elemento< /li >
+                        < li >elemento< /li >
+                        < !-- da questo punto in poi contiamo a partire da 30 -- >
+                        < li value="30" >elemento< /li >
+                        < li >elemento< /li >
+                        < /ol >
+                </pre>
+                <div class="imgcontainer">
+                    <img src="img/11.ol_.values.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Liste di definizione</h2>
+            <p>
+                Le liste di definizione sono utilizzate per elenchi in cui è necessario associare ad ogni voce anche una descrizione.
+                Queste liste sono definite utilizzando il tag < dl > e gli elementi dell'elenco sono formati da due parti:
+            </p>
+            <ul>
+                <li>il termine (specificato con il tag < dt >)</li>
+                <li>la descrizione associata (specificata con il tag < dd >)</li>
+            </ul>
+            <div class="codecontainer">
+                <pre>
+                    Ecco i principali tag per delimitare il testo:
+                    < dl >
+                        < dt >p< /dt >
+                        < dd >individua l'apertura di un nuovo paragrafo< /dd >
+                        < dt >div< /dt >
+                        < dd >individua l'apertura di un nuovo blocco di testo< /dd >
+                        < dt >span< /dt >
+                        < dd >individua l'apertura di un elemento inline, cui attribuire
+                            una formattazione atraverso gli stili< /dd >
+                    < /dl >
+                    ci sono poi altri tag che...
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/11.dl_.png" alt="">
+            </div>
+        </section>
+        <section class="buttonsection">
+            <a href="commenti-in-html.html">Precedente</a>
+            <a href="gli-attributi.html">Seguente</a>
+        </section>
+    </section>
+
+</main>
+
+    
+</body>
+</html>
