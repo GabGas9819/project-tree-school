@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- links -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I link in HTML, l'ipertesto</title>
+</head>
+<body>
+<!-- nav section start -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="Homepage.html"><img src="logoimg/logo.webp" alt="logoimg"></a>
+        </div>
+        <div class="links-container">
+            <a href="index.html">Html</a>
+            <a href="">css</a>
+            <a href="">javascript</a>
+            <a href="">esercizi</a>
+        </div>
+    </div>
+</nav>
+<!-- nav section end -->
+
+<header class="header">
+    <div class="headercontainer">
+        <h1>
+            I link in HTML, l'ipertesto
+        </h1>
+        <ul>
+            <li>
+                L'ipertestualità è un concetto che si riferisce alla capacità di collegare diversi contenuti attraverso i link all'interno di una pagina web.
+            </li>
+            <li>
+                I link sono elementi essenziali delle pagine web e consentono agli utenti di spostarsi tra diverse risorse o pagine.
+            </li>
+            <li>
+                I link in una pagina web possono essere utilizzati per collegare diverse informazioni tra loro, creando una rete di connessioni ipertestuali.
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <!-- main section start -->
+    <section class="mainsection">
+        <!-- sections start -->
+        <section>
+            <p>
+                Il web è costituito da ipertesti e non solo da testi.
+                I link sono il mezzo per passare da un testo all'altro.
+                I link sono formati da due componenti.
+            </p>
+            <table>
+                <thead>
+                    <tr><td>Il contenuto</td><td>La risorsa</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>È la parte visibile del link, e proprio per questo l'utente deve essere sempre in grado di capire quali sono i collegamenti da cliccare all'interno della pagina</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Si tratta di un collegamento ipertestuale che può essere un link a un'altra pagina sullo stesso server o su un server diverso, oppure può essere un collegamento interno a un punto specifico della stessa pagina.
+                                </li>
+                                <li>
+                                    Questo tipo di collegamento consente agli utenti di navigare facilmente tra le pagine web o di spostarsi all'interno di una stessa pagina.
+                                </li>
+                                <li>
+                                    I collegamenti interni possono essere utilizzati per creare una migliore esperienza utente e facilitare la navigazione all'interno di un sito web.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>"nasconde" il collegamento (non importa se si tratta di testo o di immagine)</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Un collegamento è un elemento in HTML che permette di creare un collegamento ipertestuale tra una pagina e un'altra.
+                                </li>
+                                <li>
+                                    Il collegamento indica la direzione in cui punta, ossia verso quale pagina o risorsa si sta navigando.
+                                </li>
+                                <li>
+                                    Il collegamento può essere rappresentato da testo cliccabile o da un'immagine.
+                                </li>
+                            </ul>                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>                
+                Si utilizza la metafora dell'ancora per spiegare i link, con "la testa" del link all'interno del documento stesso e la "coda" in un altro documento o punto del documento stesso.
+                I link sono importanti per la navigazione tra pagine web e per creare una struttura ipertestuale.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Link che puntano ad altri documenti
+            </h2>
+            <p>
+                
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    I contenuti per sviluppatori sono su
+                    < a href="https://www.w3.org">w3c.org< /a >.
+                </pre>                    
+            </div>
+            <p>
+                Che produce come risultato:
+            </p>
+            <p>
+                I contenuti per sviluppatori sono su
+                <a href="https://www.w3.org">w3c.org</a>.
+            </p>
+            <p>
+                Come si può intuire la testa della nostra àncora è il testo w3c.org, mentre la coda, cioè la destinazione (specificata dall'attributo href) è il sito web verso cui il link punta, cioè https://www.w3.org.
+            </p>
+            <p>
+                Il meccanismo del link funziona allo stesso modo indipendentemente dal tipo di risorsa a cui punta.
+                Il comportamento del browser può variare a seconda del tipo di risorsa.
+                Ad esempio, è indifferente se la destinazione dell'ancora è una pagina HTML, un'immagine, un file pdf, un file zip o un file exe.
+            </p>
+            <div class="imgcontainer">
+                <img src="" alt="">
+            </div>
+            <table>
+                <thead>
+                    <tr><td>Tipologia</td><td>Comportamento standard</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Immagine .gif, .jpg, .png</td>
+                        <td>Viene visualizzata nel browser</td>
+                    </tr>
+                    <tr>
+                        <td>Documento .html, .pdf, .doc</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    La pagina web viene visualizzata nel browser.
+                                </li>
+                                <li>
+                                    Alcuni documenti come .doc e .pdf potrebbero richiedere l'installazione di un plugin apposito.
+                                </li>
+                                <li>
+                                    Se il plugin non è installato, il sistema chiederà all'utente se salvare il file.
+                                </li>
+                            </ul>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>File .zip, file .exe</td>
+                        <td>
+                            Viene chiesto all'utente di scaricare il file
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <cite>
+                Nota: per motivi di sicurezza il download di un file (specie se .exe) può essere bloccato da un antivirus o da un firewall.
+            </cite>
+        </section>
+        <section class="buttonsection">
+            <a href="raggruppare-celle-con-rowspan-e-colspan.html">Precedente</a>
+            <a href="i-percorsi-assoluti-e-relativi.html">Seguente</a>
+        </section>
+    </section>
+
+</main>
+
+    
+</body>
+</html>

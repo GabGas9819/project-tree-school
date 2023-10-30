@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- links -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella HTML: struttura di base</title>
+</head>
+<body>
+<!-- nav section start -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="Homepage.html"><img src="logoimg/logo.webp" alt="logoimg"></a>
+        </div>
+        <div class="links-container">
+            <a href="index.html">Html</a>
+            <a href="">css</a>
+            <a href="">javascript</a>
+            <a href="">esercizi</a>
+        </div>
+    </div>
+</nav>
+<!-- nav section end -->
+
+<header class="header">
+    <div class="headercontainer">
+        <h1>
+            Tabella HTML: struttura di base
+        </h1>
+        <ul>
+            <li>
+                Una tabella HTML è una struttura di base utilizzata per organizzare e visualizzare dati in righe e colonne.
+            </li>
+            <li>
+                È possibile creare raggruppamenti di righe e di colonne per organizzare i dati in modo più chiaro.
+            </li>
+            <li>
+                Questo template dà una valenza semantica ai dati, aiutando a organizzarli in modo logico e comprensibile.
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <!-- main section start -->
+    <section class="mainsection">
+        <!-- sections start -->
+        <section>
+            <p>
+                Le tabelle sono componenti importanti in HTML utilizzate per impaginare dati aggregati e rappresentare informazioni.
+                Le tabelle sono state utili per gestire i layout grafici nel passato e sono ancora utilizzate nell'epoca dei CSS.
+                Le tabelle sono elementi indispensabili per la rappresentazione di informazioni.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Tabella HTML di base
+            </h2>
+            <p>
+                Per definire una tabella "minimale", che sia comunque interpretata correttamente dai browser possiamo riprodurre un esempio simile al seguente:
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < table >
+                        < tr >< td >Colonna 1< /td >< td >Colonna 2< /td >< /tr >
+                        < tr >< td >Dato 1,1< /td >< td >Dato 1,2< /td >< /tr >
+                        < tr >< td >Dato 2,1< /td >< td >Dato 2,2< /td >< /tr >
+                        < tr >< td >Dato 3,1< /td >< td >Dato 3,2< /td >< /tr >
+                    < /table >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/12.tabellaminimale.png" alt="">
+            </div>
+            <p>
+                Nell'esempio riusciamo a definire una griglia formata da righe e colonne, il risultato è piuttosto povero a livello semantico (non distinguiamo ad esempio il nome di una colonna dai suoi valori), ma ci aiuta a presentare i tag di base:
+            </p>
+            <table>
+                <thead>
+                    <tr><td>Tag</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>< table ></td>
+                        <td>
+                            È il contenitore di tutta la tabella e la definisce
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< tr ></td>
+                        <td>
+                            "table row" Contiene una riga della tabella
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< td ></td>
+                        <td>
+                            "table data" Una cella che contiene i valori all'interno di una riga
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Questo tipo di tabella era un elemento predominante nel "vecchio Web"
+                Era funzionale sia alla suddivisione degli spazi che alla rappresentazione dei dati
+                Con il consolidarsi di pratiche più specifiche per il markup dei layout, l'utilizzo delle tabelle è caduto in disuso 
+            </p>
+        </section>
+        <section>
+            <h2>Il template di una tabella: caption, thead, tbody, tfoot</h2>
+            <p>Il template di una tabella è una struttura che viene utilizzata per organizzare i dati in una tabella HTML. È composto da quattro parti principali: 
+                la caption, thead, tbody e tfoot. La caption viene utilizzata per fornire un titolo descrittivo alla tabella. Thead contiene le intestazioni di 
+                colonna della tabella. Tbody contiene i dati principali della tabella, mentre tfoot viene utilizzato per fornire una riga di sommario o di totale 
+                per la tabella.
+            </p>
+            <div class="codecontainer">
+                <pre>
+                    < table >
+                        < caption >
+                        < p >I miei dati< /p >
+                        < /caption >
+                        < thead >
+                        < tr >< th >Colonna 1< /th >< th >Colonna 2< /th >< /tr >
+                        < /thead >
+                        < tfoot >
+                        < tr >< td >Totale 1< /td >< td >Totale 2< /td >< /tr >
+                        < /tfoot >
+                        < tbody >
+                        < tr >< td >Dato 1,1< /td >< td >Dato 1,2< /td >< /tr >
+                        < tr >< td >Dato 2,1< /td >< td >Dato 2,2< /td >< /tr >
+                        < tr >< td >Dato 3,1< /td >< td >Dato 3,2< /td >< /tr >
+                        < /tbody >
+                    < /table >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/12.tabellacompleta.png" alt="">
+            </div>
+            <p>
+                I tag introdotti sono tutti definiti come "facoltativi", nel senso che la tabella non si "rompe" se manca uno di essi. Tuttavia si tratta di elementi fondamentali per la semantica delle tabelle. Esaminiamoli:
+            </p>
+            
+            <table>
+                <thead>
+                    <tr><td>Tag</td><td>Descrizione</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>< caption ></td>
+                        <td>
+                            È una didascalia che ci permette di dare una contestualizzazione ai dati e rendere più chiaro il loro significato.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< thead ></td>
+                        <td>
+                            Serve per raggruppare le righe che rappresentano l'intestazione della tabella.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< th ></td>
+                        <td>
+                            "table header" Indica una cella che contiene un intestazione (ad esempio il titolo di una colonna o di una riga) e serve a dare una definizione dei dati cui si riferisce.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< tbody ></td>
+                        <td>
+                            Raggruppa le righe che contengono il corpo della tabella, spesso con i dati veri e propri.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< tfoot ></td>
+                        <td>
+                            Racchiude le righe che utilizziamo come footer della tabella, in cui si possono inserire dei dati di riepilogo, somme, medie, etc.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Alla fine la rappresentazione della tabella rimane quella che ci aspetteremmo:
+            </p>
+            <div class="imgcontainer">
+                <img src="img/schemaTabella.gif" alt="">
+            </div>
+        </section>
+        <section>
+            <h2>colgroup e col, raggruppare le colonne</h2>
+            <p>
+                Possiamo raggruppare le celle della tabella anche per colonna grazie al tag < colgroup >, che deve essere inserito tra il caption e ogni possibile raggruppamento per riga (thead, tbody, tfood).
+                All'interno di colgroup definiamo le colonne che volgiamo includere usando il tag < col >.                    
+                Con colgroup i gruppi vengono creati prendendo le colonne da sinistra verso destra. Il numero di colonne da considerare lo indichiamo grazie all'attributo span.
+            </p>
+        </section>
+        <section>
+            <h2>Annidare tabelle inHTML</h2>
+            <p>Chiudiamo mostrando come è possibile annidare le tabelle le une dentro le altre e lo facciamo esaminando un semplice esempio:</p>
+            <div class="codecontainer">
+                <pre>
+                    < table>
+                        < thead >
+                        < tr >< th >Campo< /th >< th >Tabella< /th >< /tr >
+                        < /thead >
+                        < tbody >
+                        < tr >
+                        < td >Campo1< /td >
+                        < td >
+                        < table >
+                        < thead >< tr >< th >Campo< /th >< th >Descrizione< /th >< /tr >< /thead >
+                        < tbody >< tr >< td >Campo1< /td >< td >Descrizione1< /td >< /tr ></ tbody >
+                        < /table >
+                        < /td >
+                        < /tr >
+                        < /tbody >
+                    < /table >
+                </pre>
+            </div>
+            <div class="imgcontainer">
+                <img src="img/12.table_.nested.png" alt="">
+            </div>
+        </section>
+        <section class="buttonsection">
+            <a href="elenchi-puntati-e-numerati.html">Precedente</a>
+            <a href="raggruppare-celle-con-rowspan-e-colspan.html">Seguente</a>
+        </section>
+    </section>
+
+</main>
+
+    
+</body>
+</html>
